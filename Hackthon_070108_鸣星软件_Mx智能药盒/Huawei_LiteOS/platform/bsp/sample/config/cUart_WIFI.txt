@@ -1,0 +1,91 @@
+char * ATCWMODE         = "AT+CWMODE=1\r\n" ;
+AT+CWMODE=1
+
+ok
+222222222222222222222222
+char * ATRST            = "AT+RST\r\n" ;
+AT+RST
+
+
+OK
+WIFI DISCONNECT
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,7)
+
+load 0x40100000, len 1856, room 16 
+tail 0
+chksum 0x63
+load 0x3ffe8000, len 776, room 8 
+tail 0
+chksum 0x02
+load 0x3ffe8310, len 552, room 8 
+tail 0
+chksum 0x79
+csum 0x79
+
+2nd boot version : 1.5
+  SPI Speed      : 40MHz
+  SPI Mode       : DIO
+  SPI Flash Size & Map: 32Mbit(512KB+512KB)
+jump to run user1 @ 1000
+
+屸r抣宭?靗`屸r抣靗?l`屸r抣帪?ll`rl巶rl尀鈱bl宐r|巄p?抌bb祢n顎nn?ll噔l鞄?l寧ll寣鞂l帋l?n?尀鈱bl鞄p尀鈱bl宐prlrl
+Ai-Thinker Technology Co. Ltd.
+
+ready
+WIFI CONNECTED
+WIFI GOT IP
+
+
+
+33333333333333333333333333333
+char * ATCWJAP          = "AT+CWJAP=\"ALIENTEK\",\"15902020353\"\r\n" ;
+AT+CWJAP="TechTemple Guest","kejisiguest"
+
+WIFI DISCONNECT
+WIFI CONNECTED
+WIFI GOT IP
+
+OK
+
+
+444444444444444444444
+char * ATCIPMUX        = "AT+CIPMUX=0\r\n";
+AT+CIPMUX=0
+
+
+OK
+
+
+
+
+55555555555555555555555
+char * ATCIPSTART       = "AT+CIPSTART=\"TCP\",\"192.168.8.8\",8086\r\n" ;
+
+AT+CIPSTART="TCP","10.1.21.146",48569
+
+CONNECT
+
+OK
+
+
+
+666666666666666666
+char * ATCIPMODE        = "AT+CIPMODE=1\r\n" ;
+AT+CIPMODE=1
+
+
+OK
+
+
+
+
+7777777777777777
+char * ATCIPSEND        = "AT+CIPSEND\r\n" ;
+AT+CIPSEND
+
+
+OK
+
+>
+
